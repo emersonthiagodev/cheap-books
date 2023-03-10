@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheap Books</title>
+    <link rel="stylesheet" href="estilos/index-mobile.css">
+    <link rel="shortcut icon" href="android-chrome-192x192.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span class="material-icons" onclick="callMenu()">view_headline</span>
+
+        <menu id="menu">
+            <ul>
+                <li id="login">
+                    <span class="material-icons" id="icone-login">account_circle</span>
+
+                    <a href="#">Entra</a> <a href="#">Cadastra-se</a>
+
+                    <span class="material-icons" id="icone-cadastro" onclick="closeMenu()">close</span>
+                </li>
+                <hr>
+                <li>Livros Fisicos</li>
+                <hr>
+                <li>Livros Digitais</li>
+                <hr>
+                <li>Autores</li>
+                <hr>
+                <li>Loja Fisica</li>
+                <hr>
+            </ul>
+        </menu>
+
+        <a href="#">
+            <h1>Cheap Books</h1>
+        </a>
+
+        <input type="search" name="pes" id="pes" placeholder="Pesquiser por um livro">
+    </header>
+
+    <main>
+        <h2>Destaques da semana</h2>
+
+        <section id="featured-books">
+            <span class="material-icons" id="left">arrow_back_ios</span>
+            <span class="material-icons" id="right">arrow_forward_ios</span>
+
+            <div id="buttons">
+                <input type="radio" name="featured" id="featured-01" onchange="changeImage()">
+                <input type="radio" name="featured" id="featured-02" onchange="changeImage()">
+                <input type="radio" name="featured" id="featured-03" onchange="changeImage()">
+                <input type="radio" name="featured" id="featured-04" onchange="changeImage()">
+            </div>
+            
+            <div id="buttons-labels">
+                <label for="featured-01" id="feat-01"></label>
+                <label for="featured-02" id="feat-02"></label>
+                <label for="featured-03" id="feat-03"></label>
+                <label for="featured-04" id="feat-04"></label>
+            </div>
+        </section>
+
+        <section id="banking-books">
+            <h2>Os livros Mais Vendidos da Semana</h2>
+
+            <div class="books-sold" id="books-sold-01">
+                <img src="imagens/livros-capas/mistborn-livro.png" alt="Livro Vendido 1">
+
+                <div>
+                    <h2>Mistborn</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam fugiat cum cupiditate vel totam recusandae</p>
+
+                    <span id="assessment">
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                    </span>
+
+                    <span id="price">R$ 50,00</span>
+
+                    <span id="details">Ver mais detalhes</span>
+                </div>
+                
+            </div>
+
+            <div class="books-sold" id="books-sold-02">
+                <img src="imagens/livros-capas/wow-a-ruptura.jpg" alt="Livro Vendido 2">
+
+                <div>
+                    <h2>World of Warcraft A Ruptura</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam fugiat cum cupiditate</p>
+
+                    <span id="assessment">
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                    </span>
+
+                    <span id="price">R$ 45,00</span>
+
+                    <span id="details">Ver mais detalhes</span>
+                </div>
+            </div>
+
+            <div class="books-sold" id="books-sold-03">
+                <img src="imagens/livros-capas/dune-livro.jpg" alt="Livro Vendido 1">
+
+                <div>
+                    <h2>Dune</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam fugiat cum cupiditate vel totam recusandae praesentium assumenda</p>
+
+                    <span id="assessment">
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                    </span>
+
+                    <span id="price">R$ 80,00</span>
+
+                    <span id="details">Ver mais detalhes</span>
+                </div>
+                
+            </div>
+
+            <div class="books-sold" id="books-sold-04">
+                <img src="imagens/livros-capas/o-mago.jpg" alt="Livro Vendido 1">
+
+                <div>
+                    <h2>Mago</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam fugiat cum cupiditate vel totam recusandae praesentium assumenda</p>
+
+                    <span id="assessment">
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                    </span>
+
+                    <span id="price">R$ 30,00</span>
+
+                    <span id="details">Ver mais detalhes</span>
+                </div>
+                
+            </div>
+                
+        </section>
+
+        <section id="book-categories">
+            <h2>Explore algumas Categorias de Livros</h2>
+            <!--<span>Icone filtros</span>-->
+
+            <div class="categories" id="categorie-01">
+                <img src="imagens/livros-capas/mistborn-livro.png" alt="Livro Vendido 1">
+
+                <h2>Fantasia</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, iusto voluptatum?</p>
+            </div>
+
+            <div class="categories" id="categorie-02">
+                <img src="imagens/livros-capas/dune-livro.jpg" alt="Livro Vendido 1">
+
+                <h2>Ficção Cientifica</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, iusto voluptatum?</p>
+            </div>
+
+            <div class="categories" id="categorie-03">
+                <img src="imagens/livros-capas/wow-a-ruptura.jpg" alt="Livro Vendido 1">
+
+                <h2>Romancer</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, iusto voluptatum?</p>
+            </div>
+
+            <div class="categories" id="categorie-04">
+                <img src="imagens/livros-capas/o-mago.jpg" alt="Livro Vendido 1">
+
+                <h2>Sci-fi</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, iusto voluptatum?</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+       <p>Copyright © 2023 Cheap Books</p>
+
+       <p>Esse site foi criado com o unico e exclusivo objetivo de estudo sem fins lucrativos todos os direitos das imagens utilizadas reservadas aos seus respectivos autores.</p>
+
+       <p>Siga-nos em nossas redes:</p>
+       <div id="social-networks">
+            <a href="#">
+                <img src="imagens/icones-redes/logo-facebook.jpg" alt="">
+            </a>
+            <a href="#">
+                <img src="imagens/icones-redes/logo-instagram.jpg" alt="">
+            </a>
+            <a href="#">
+                <img src="imagens/icones-redes/logo-twitter.jpg" alt="">
+            </a>
+            <a href="#">
+                <img src="imagens/icones-redes/logo-youtube.jpg" alt="">
+            </a>
+       </div>
+    </footer>
+
+    <script>
+        function callMenu(){
+           menu.style.display = "block"
+
+           document.querySelector('h1').style.display = "none"
+           document.querySelector('input').style.display = "none"
+           
+
+           document.body.style.overflowY = 'hidden'
+        }
+
+        function closeMenu(){
+            menu.style.display = "none"
+
+            document.querySelector('h1').style.display = "inline-block"
+            document.querySelector('input').style.display = "block"
+            
+
+            document.body.style.overflowY = 'scroll'
+        }
+
+        function changeImage(){
+            const buttons = document.querySelectorAll('input[name="featured"]')
+            const labelButtons = document.querySelectorAll('label')
+            const backgrounds = ['imagens/arts-livros/mistborn.jpg', 'imagens/arts-livros/mago.jpg', 'imagens/arts-livros/o-nome-do-vento.jpg', 'imagens/arts-livros/dune-art.jpg']
+
+            for(let i = 0; i < buttons.length; i++){
+                if(buttons[i].checked){
+                    labelButtons[i].style.backgroundColor = "white"
+                    document.querySelector('#featured-books').style.backgroundImage = `url('${backgrounds[i]}')`
+                }
+                
+                else{
+                    labelButtons[i].style.backgroundColor = "transparent"
+                }
+            }
+        }
+
+        function arrowChangeImage(){
+
+        }
+    </script>
+</body>
+</html>

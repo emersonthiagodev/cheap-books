@@ -1,0 +1,317 @@
+/* estilo da pagina principal para celulares*/
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    height: 120px;
+    background-color: #434666;
+}
+
+header > span{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    cursor: pointer;
+}
+
+header > span.material-icons{
+    font-size: 35px;
+}
+
+header > menu{
+    display: none;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #535780;
+}
+
+header > menu > ul > li#login{
+    cursor: default;
+    text-indent: 0px;
+    background-color: #303358;
+}
+
+header > menu > ul > li > span#icone-login{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+header > menu > ul > li > a{
+    margin-left: 20px;
+    font-size: 1.2em;
+    color: #535780;
+    text-decoration: none;
+}
+
+header > menu > ul > li > a:hover{
+    color: #6a6fa7;
+}
+
+header > menu > ul > li > span#icone-cadastro{
+    float: right;
+    position: relative;
+    top: 8px;
+    right: 20px;
+    cursor: pointer;
+    border: 2px double black;
+}
+
+header > menu > ul > li{
+    font-size: 1.2em;
+    text-indent: 20px;
+    line-height: 50px;
+}
+
+header > menu > ul > li:hover{
+    cursor: pointer;
+    background-color: #676c9e;
+}
+
+header > menu > ul > hr{
+    border-color: black;
+}
+
+header > a{
+    position: absolute;
+    top: 33px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+}
+
+header > a > h1{
+    display: inline-block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.2em;
+    color: #767AB3;
+}
+
+header > input{
+    width: 85%;
+    height: 40px;
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-indent: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+main{
+    width: 95%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+main h2{
+    padding: 15px 0px;
+}
+
+main > section#featured-books{
+    width: 100%;
+    height: 250px;
+    background-image: url(../imagens/arts-livros/mistborn.jpg);
+
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#featured-books > span.material-icons{
+    font-size: 35px;
+}
+
+section#featured-books > span#left{
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+section#featured-books > span#right{
+    float: right;
+    margin-top: 100px;
+    margin-right: 20px;
+}
+
+section#featured-books > span:hover{
+    cursor: pointer;
+}
+
+section#featured-books > div#buttons{
+   display: none;
+}
+
+section#featured-books > div#buttons-labels{
+    width: 180px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+section#featured-books > div#buttons-labels > label{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid lightblue;
+    border-radius: 50%;
+}
+
+section#featured-books > div#buttons-labels > label#feat-01{
+    background-color: white;
+}
+
+section#featured-books > div#buttons-labels > label:hover{
+    background-color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+div#buttons-labels > label:not(:Last-child){
+    margin-right: 30px;
+}
+
+section#banking-books > div.books-sold{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 5px;
+    background-color: #666a9977;
+
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+section#banking-books > div.books-sold > img{
+    width: 45%;
+    height: 250px;
+    display: inline-block;
+    background-color: #434666;
+    
+    border-bottom-left-radius: 20px;
+}
+
+section#banking-books > div.books-sold > h2{
+    text-align: center;
+    font-size: 1.4em;
+    padding: 5px 0px;
+}
+
+section#banking-books > div.books-sold  > div{
+    float: right;
+    width: 50%;
+    padding: 5px;
+}
+
+section#banking-books > div.books-sold > div > h2{
+    padding: 10px 0px;
+    font-size: 1.2em;
+}
+
+section#banking-books > div.books-sold > div > p{
+    font-size: 0.9em;
+}
+
+section#banking-books > div.books-sold > div > span{
+    display: block;
+}
+
+section#banking-books > div.books-sold > div > span#assessment{
+    margin-top: 10px;
+    font-size: 25px;
+    color: #3b3e5fe3;
+}
+
+section#banking-books > div.books-sold > div > span#price{
+    margin-top: 5px;
+    font-size: 1.1em;
+}
+
+section#banking-books > div.books-sold > div > span#details{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: -25%;
+    
+    border-radius: 5px;
+    border: 2px solid #434666;
+    padding: 8px;
+}
+
+section#banking-books > div.books-sold > div > span#details:hover{
+    cursor: pointer;
+    background-color: #434666;
+    transition: 0.5s;
+}
+
+section#book-categories > div.categories{
+    display: inline-block;
+    width: 48%;
+    height: 330px;
+    background-color: #666a995e;
+    margin-bottom: 20px;
+
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+section#book-categories > div.categories:hover{
+    cursor: pointer;
+    background-color: #7378af9c;
+}
+
+div#categorie-02, div#categorie-04{
+    margin-left: 10px;
+}
+
+section#book-categories > div.categories > img{
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    height: 200px;
+    display: inline-block;
+    background-color: #666a99;
+
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+section#book-categories > div.categories > h2{
+    font-size: 1.4em;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+section#book-categories > div.categories > p{
+    text-align: center;
+    font-size: 0.9em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer{
+    background-color: #383a53;
+    padding: 20px;
+    text-align: center;
+}
+
+footer > p{
+    font-size: 1.1em;
+    padding-bottom: 15px;
+}
+
+footer > div#social-networks > a > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
