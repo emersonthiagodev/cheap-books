@@ -238,9 +238,8 @@ section#banking-books > div.books-sold > div > span#price{
 
 section#banking-books > div.books-sold > div > span#details{
     display: inline-block;
-    margin-top: 20px;
-    margin-left: 20%;
-    margin-right: -25%;
+    margin-top: 10px;
+    margin-left: 10%;
     
     border-radius: 5px;
     border: 2px solid #434666;
@@ -255,8 +254,8 @@ section#banking-books > div.books-sold > div > span#details:hover{
 
 section#book-categories > div.categories{
     display: inline-block;
-    width: 48%;
-    height: 330px;
+    width: 47%;
+    max-height: 400px;
     background-color: #666a995e;
     margin-bottom: 20px;
 
@@ -270,7 +269,7 @@ section#book-categories > div.categories:hover{
 }
 
 div#categorie-02, div#categorie-04{
-    margin-left: 10px;
+    margin-left: 12px;
 }
 
 section#book-categories > div.categories > img{
@@ -286,7 +285,7 @@ section#book-categories > div.categories > img{
 }
 
 section#book-categories > div.categories > h2{
-    font-size: 1.4em;
+    font-size: 1.1em;
     text-align: center;
     padding: 10px 0px;
 }
@@ -296,6 +295,7 @@ section#book-categories > div.categories > p{
     font-size: 0.9em;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 footer{
@@ -307,6 +307,10 @@ footer{
 footer > p{
     font-size: 1.1em;
     padding-bottom: 15px;
+}
+
+footer > div#social-networks > a{
+    text-decoration: none;
 }
 
 footer > div#social-networks > a > img{
