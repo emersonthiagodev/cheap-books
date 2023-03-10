@@ -18,7 +18,7 @@ header > span{
     cursor: pointer;
 }
 
-header > span.material-icons{
+header span.material-icons{
     font-size: 35px;
 }
 
@@ -227,7 +227,7 @@ section#banking-books > div.books-sold > div > span{
 
 section#banking-books > div.books-sold > div > span#assessment{
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 20px;
     color: #3b3e5fe3;
 }
 
